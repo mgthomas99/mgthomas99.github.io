@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
     <head>
-        <title>Zork</title>
+        <meta charset="utf-8" />
+        <title>mgthomas99</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" />
+        <link rel="stylesheet" href="./index.css" />
     </head>
 
     <body>
-        <h3>Hello, world!</h3>
-        <div id="numbers"></div>
-
-        <script type="text/javascript">
-            var el = document.getElementById("numbers");
-            for (var i = 1; i <= 10; i++) {
-                var span = document.createElement("span");
-                span.innerText = String(i);
-                el.appendChild(span);
-            }
+        <h1 id="name">mgthomas99</h1>
+        <script type="text/javascript" defer>
+            var el = document.getElementById("name");
+            el.addEventListener("mouseenter", function(){
+                el.innerText = "mgthomas99";
+            });
+            el.addEventListener("mouseleave", function(){
+                el.innerText = "George";
+            });
         </script>
     </body>
 </html>
