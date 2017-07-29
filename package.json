@@ -1,0 +1,36 @@
+{
+  "name": "mgthomas99.github.io",
+  "version": "1.0.0",
+  "description": "George Thomas GitHub space",
+  "main": "dist/index.js",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "concurrently": "^3.5.0",
+    "express": "^4.15.3",
+    "typescript": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/express": "^4.0.36",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.17",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgthomas99/mgthomas99.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "George Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgthomas99/mgthomas99.github.io/issues"
+  },
+  "homepage": "https://github.com/mgthomas99/mgthomas99.github.io#readme"
+}
