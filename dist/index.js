@@ -9,5 +9,5 @@ server.get("/", (req, res) => {
 server.get("/:r", (req, res) => {
     res.send(String(Math.random()));
 });
-server.listen(8080);
+server.listen(process.env.PORT || 8080);
 console.log("Server listening on port 8080!");
