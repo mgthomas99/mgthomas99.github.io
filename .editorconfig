@@ -2,15 +2,16 @@
 charset = utf-8
 root = true
 
-[*]
+[**.*]
+charset = utf-8
 indent_size = 4
 indent_style = space
-trim_trailing_whitespace = true
 insert_final_newline = true
+remove_trailing_whitespace = true
 
-[*.bat]
-indent_size = 2
-indent_style = space
+[**.md]
+insert_final_newline = false
+remove_trailing_whitespace = false
 
 [package.json]
 indent_size = 2
