@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+/** Vendor information for generating interoperable CSS.
+ */
+/**
+ * Creates an interoperable keyframe animation for all known
+ * vendors.
+ */
+/**
+ * Applies all known vendor prefixes to `$property` and
+ * mixes it into the current CSS scope, using `$args` as
+ * the arguments.
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.common .event-aggregator .visible-on-hover {
+  animation: fade-out 0.1s;
+  opacity: 0; }
+
+.common .event-aggregator:hover .visible-on-hover {
+  animation: fade-in 0.1s;
+  opacity: 1; }
+
+@font-face {
+  font-family: "C64";
+  src: url("./../font//C64_Pro_Mono-STYLE.svg") format("svg"), url("./../font//C64_Pro_Mono-STYLE.ttf") format("truetype"), url("./../font//C64_Pro_Mono-STYLE.woff") format("woff"), url("./../font//C64_Pro_Mono-STYLE.woff2") format("woff2"); }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0082c8;
+  color: white;
+  font-family: "C64", monospace;
+  font-size: 2vw;
+  letter-spacing: -0.2em;
+  line-height: 0.8em; }
+
+#slash-maze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }

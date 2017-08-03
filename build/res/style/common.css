@@ -1,0 +1,54 @@
+/** Vendor information for generating interoperable CSS.
+ */
+/**
+ * Creates an interoperable keyframe animation for all known
+ * vendors.
+ */
+/**
+ * Applies all known vendor prefixes to `$property` and
+ * mixes it into the current CSS scope, using `$args` as
+ * the arguments.
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.common .event-aggregator .visible-on-hover {
+  animation: fade-out 0.1s;
+  opacity: 0; }
+
+.common .event-aggregator:hover .visible-on-hover {
+  animation: fade-in 0.1s;
+  opacity: 1; }
