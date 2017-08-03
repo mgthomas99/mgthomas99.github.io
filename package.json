@@ -1,34 +1,32 @@
 {
   "name": "mgthomas99.github.io",
   "version": "1.0.0",
-  "description": "George Thomas GitHub space",
-  "main": "dist/index.js",
+  "description": "George Thomas",
+  "main": "index.js",
   "dependencies": {
-    "chai": "^4.1.0",
-    "concurrently": "^3.5.0",
-    "express": "^4.15.3",
-    "typescript": "^2.4.2"
+    "node-sass": "^4.5.3"
   },
   "devDependencies": {
-    "@types/chai": "^4.0.1",
-    "@types/express": "^4.0.36",
-    "@types/mocha": "^2.2.41",
-    "@types/node": "^8.0.17",
-    "mocha": "^3.4.2"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "mocha"
+    "build:style": "node-sass src/ -o dist/res/style/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mgthomas99/mgthomas99.github.io.git"
   },
   "keywords": [
-    "blog"
+    "blog",
+    "github",
+    "pages",
+    "site",
+    "website"
   ],
   "author": "George Thomas",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mgthomas99/mgthomas99.github.io/issues"
   },
