@@ -1,0 +1,46 @@
+
+/** Vendor information for generating interoperable CSS.
+ */
+$vendors : (
+  "chrome" : (
+      "prefix": "-webkit-"
+    ),
+  "firefox" : (
+      "prefix": "-moz-"
+    ),
+  "edge": (
+      "prefix": "-ms-"
+    ),
+  "opera": (
+      "prefix": "-o-"
+    )
+);
+
+/**
+ * Creates an interoperable keyframe animation for all known
+ * vendors.
+ */
+@mixin keyframe($identifier) {
+  @-webkit-keyframes #{$identifier} {
+    @content;
+  }
+  @-moz-keyframes #{$identifier} {
+    @content;
+  }
+  @keyframes #{$identifier} {
+    @content;
+  }
+}
+
+/**
+ * Applies all known vendor prefixes to `$property` and
+ * mixes it into the current CSS scope, using `$args` as
+ * the arguments.
+ */
+@mixin prefix($property, $args...) {
+  @each $vendor in map-values($vendors) {
+    $prefix : map-get($vendor, "prefix");
+    #{$prefix}#{$property}: $args;
+  }
+  #{$property}: $args;
+}
