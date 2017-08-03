@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>mgthomas99</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" />
+        <link rel="stylesheet" href="./build/res/style/index.css" />
+    </head>
+
+    <body class="common">
+        <div class="background-pane" id="slash-maze">
+        </div>
+        <script type="text/javascript">
+            "use strict";
+
+            function generate10RNDString(width, height) {
+                var str = "";
+                for (var y = 0; y < height; y++) {
+                    for (var x = 0; x < width; x++) {
+                        str += Math.random() > 0.5 ? '\\' : '/';
+                    }
+                    str += "\n";
+                }
+                return str;
+            }
+        </script>
+        <script type="text/javascript">
+            var pane = document.getElementById("slash-maze");
+            pane.innerText = generate10RNDString(100, 100);
+        </script>
+    </body>
+</html>
