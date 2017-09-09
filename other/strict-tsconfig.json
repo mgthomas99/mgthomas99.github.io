@@ -1,0 +1,17 @@
+// A super-strict `tsconfig.json` file, because I
+// like strict typing and stuff.
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"target": "es2015",
+
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"alwaysStrict": true,
+		"charset": "utf8",
+		"declaration": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true
+	}
+}
