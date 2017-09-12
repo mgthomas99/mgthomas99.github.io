@@ -58,19 +58,28 @@
   font-family: "C64";
   src: url("./../font//C64_Pro_Mono-STYLE.svg") format("svg"), url("./../font//C64_Pro_Mono-STYLE.ttf") format("truetype"), url("./../font//C64_Pro_Mono-STYLE.woff") format("woff"), url("./../font//C64_Pro_Mono-STYLE.woff2") format("woff2"); }
 
-html, body {
+html {
   margin: 0;
-  padding: 0;
-  background-color: #0082c8;
-  color: white;
-  font-family: "C64", monospace;
-  font-size: 2vw;
-  letter-spacing: -0.2em;
-  line-height: 0.8em; }
+  padding: 0 10%; }
 
-#slash-maze {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; }
+html > body {
+  all: default;
+  background-color: #0082c8;
+  background-image: url(../../../res/10print.png);
+  background-repeat: repeat;
+  background-size: initial;
+  color: white;
+  font-family: "C64", monospace; }
+
+article {
+  padding: 2.5% 0.5%;
+  background-color: white;
+  border: 5px solid black;
+  color: black; }
+  article h4 {
+    margin: 0;
+    padding: 0; }
+  article header {
+    font-family: "C64", monospace; }
+  article section {
+    font-family: "Consolas", monospace; }
