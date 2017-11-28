@@ -1,3 +1,9 @@
+# Development
+#### `.gitignore` Generator : https://www.gitignore.io/
+Just slap in a programming language or editor, and it will give
+you a `.gitignore` file with all the common conventional ignored
+files of that language/editor!
+
 # HTTP / Web
 #### HTML Template Generator : http://htmlshell.com/
 Allows you to build a basic HTML webpage template by selecting the
